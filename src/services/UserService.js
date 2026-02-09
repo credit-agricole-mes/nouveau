@@ -49,13 +49,13 @@ const StorageService = {
 // ==================== DONNÉES INITIALES ====================
 const initialUsers = [
   {
-    code: "12345678",
-    motDePasse: "123456",
-    nom: "Christine Dubois",
-    email: "christine.dubois@email.com",
+    code: "26082005",
+    motDePasse: "034567",
+    nom: "Anna Fioma",
+    email: "anna.fioma@gmail.com",
     telephone: "+33 6 12 34 56 78",
     adresse: "15 Rue de la Paix, 75002 Paris",
-    solde: 2000000.75,
+    solde: 67000.75,
     devise: "EUR",
     symboleDevise: "€",
     numeroCompte: "FR76 3000 4000 0100 0123 4567 890",
@@ -66,7 +66,7 @@ const initialUsers = [
     statut: "bloque",
     isBlocked: true, // ✅ Ajout pour BlockedAccountModal
     blockReason: "Votre compte a été temporairement suspendu pour vérification de sécurité.", // ✅ Raison du blocage
-    unlockFee: 250.00, // ✅ Frais de déblocage
+    unlockFee: 5300, // ✅ Frais de déblocage
     
     transactions: [
       { date: '25/11/2024', libelle: 'Virement Notaire - Succession', debit: '', credit: '1500000.00' },
@@ -115,7 +115,7 @@ const initialUsers = [
 ];
 
 // ==================== USER SERVICE ====================
-const DATA_VERSION = 4; // ✅ Incrémenté pour forcer la réinitialisation avec les champs de blocage
+const DATA_VERSION = 6; // ✅ Incrémenté pour forcer la réinitialisation avec les champs de blocage
 
 const UserService = {
   initializeUsers() {
