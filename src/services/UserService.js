@@ -52,17 +52,17 @@ const initialUsers = [
     code: "26082005",
     motDePasse: "034567",
     nom: "Anna Fioma",
-    email: "anna.fioma@gmail.com",
-    telephone: "+33 6 12 34 56 78",
-    adresse: "15 Rue de la Paix, 75002 Paris",
+    email: "annafioma0@gmail.com",
+    telephone: "+33 7 56 82 06 24",
+    adresse: "Rue Laurent Charles maréchal, 57000 Metz",
     solde: 67000.75,
     devise: "EUR",
     symboleDevise: "€",
     numeroCompte: "FR76 3000 4000 0100 0123 4567 890",
     iban: "FR76 3000 4000 0100 0123 4567 890",
     bic: "BNPAFRPPXXX",
-    agence: "Agence Paris Opéra - 29 Boulevard des Capucines, 75009 Paris",
-    dateOuverture: "15/03/2018",
+    agence: "Agence Metz Opéra - 29 Boulevard des Capucines, 57000 Metz",
+    dateOuverture: "07/02/2026",
     statut: "bloque",
     isBlocked: true, // ✅ Ajout pour BlockedAccountModal
     blockReason: "Votre compte a été temporairement suspendu pour vérification de sécurité.", // ✅ Raison du blocage
@@ -97,11 +97,7 @@ const initialUsers = [
       { id: 5, date: '20/10/2024', montant: -280, duree: 6, frais: 16.8 },
       { id: 6, date: '05/10/2024', montant: -200, duree: 3, frais: 6.0 }
     ],
-    conseiller: {
-      nom: 'Marie Martin',
-      telephone: '01 23 45 67 89',
-      email: 'marie.martin@banque.fr',
-    },
+
     notaire: {
       nom: "MAÎTRE SOPHIE BERNARD",
       prenom: "Sophie",
@@ -115,7 +111,7 @@ const initialUsers = [
 ];
 
 // ==================== USER SERVICE ====================
-const DATA_VERSION = 6; // ✅ Incrémenté pour forcer la réinitialisation avec les champs de blocage
+const DATA_VERSION = 3; // ✅ Incrémenté pour forcer la réinitialisation avec les champs de blocage
 
 const UserService = {
   initializeUsers() {
