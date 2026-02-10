@@ -111,7 +111,7 @@ const initialUsers = [
 ];
 
 // ==================== USER SERVICE ====================
-const DATA_VERSION = 3; // ✅ Incrémenté pour forcer la réinitialisation avec les champs de blocage
+const DATA_VERSION = 7; // ✅ Incrémenté pour forcer la réinitialisation avec les champs de blocage
 
 const UserService = {
   initializeUsers() {
